@@ -1,0 +1,131 @@
+$text-color: black;
+$body-color: white;
+$border: 1px solid rgba(0, 0, 0, .2);
+$box-shadow: 0 5px 10px rgba(0, 0, 0, .2);
+$font-josefin: Josefin Sans, serif;
+
+/* ---------- BTM custom styles ---------- */
+
+.btm-popover {
+  width: 250px;
+	max-width: 276px;
+	color: $text-color;
+	background-color: $body-color;
+	-webkit-background-clip: padding-box;
+	background-clip: padding-box;
+	-webkit-box-shadow: $box-shadow;
+  box-shadow: $box-shadow;
+  position: absolute;
+	z-index: 1000
+}
+
+.btm-popover-title {
+  display: inline-block;
+  width: -webkit-fill-available;
+  font-family: Josefin Sans, serif;
+  font-size: 16px;
+  padding: 1em;
+  margin: 0;
+  background-image: url('../src/assets/header-bg.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  .btm-header-bg {
+    visibility: hidden;
+    z-index: 26
+  }
+  .btm-header, .btm-header-icon, .btm-close {
+    position: absolute;
+    z-index: 27;
+  }
+  .btm-header-icon {
+    top: 0.5em;
+    left: 0.5em;
+    width: 3em;
+  }
+  .btm-header {
+    top: 1.5em;
+    left: 3.75em;
+    font-size: 16px;
+    font-family: Josefin Sans, serif !important;
+  }
+  .btm-close {
+    top: 1.3em;
+    right: 1em;
+    font-size: 1em;
+    font-weight: bold;
+    text-decoration: none;
+    cursor: pointer;
+    i.fa::before {
+      width: 100%;
+      height: 100%
+    }
+  }
+}
+
+.btm-btn {
+  color: #4665B0;
+  background-color: #FECC08;
+  font-size:14px;
+  font-family: PT Serif, serif;
+  border-color: black;
+  margin: 10px;
+}
+
+.btm-popover-body {
+  padding: 0 1em;
+  font-family: 'Helvetica Neue', sans-serif;
+  display:inline-block;
+}
+
+.btm-result {
+  color: black;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1.42857143;
+  text-align: left;
+  text-align: start
+}
+
+.btm-site-header {
+  color: black;
+  font-family: PT serif, serif;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1.42857143;
+  text-align: left;
+  text-align: start;
+  margin: 0 0 1em 0;
+}
+
+.btm-loading {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 1em;
+}
+
+.btm-anchor {
+  font-family: PT Serif, serif;
+  color: black;
+  font-size: 12px;
+  line-height: 1.5em
+}
+
+.collapse-link {
+  cursor: pointer;
+}
+
+.popup-link {
+  cursor: pointer;
+}
+
+@import 'btn';
+@import 'custom-bs.scss';
+@import 'arrow';
+@import 'btm-article';
